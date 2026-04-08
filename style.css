@@ -113,7 +113,33 @@ footer a {
     transition: transform 0.2s;
     display: inline-block;
 }
+/* --- AJUSTES PARA MÓVIL --- */
+@media (max-width: 600px) {
+    body {
+        /* Hacemos que el fondo se vea mejor en vertical */
+        background-size: auto 100%; 
+        padding: 10px;
+    }
 
+    .foto-perfil {
+        width: 180px; /* ¡Más grande para el móvil! */
+        height: 180px;
+    }
+
+    h1 {
+        font-size: 1.6em; /* Un pelín más pequeño para que no se corte el nombre */
+    }
+
+    section {
+        padding: 15px; /* Menos margen interno para ganar espacio */
+        margin-top: 15px;
+    }
+
+    footer a {
+        margin: 0 8px; /* Iconos más juntitos para que quepan en una fila */
+        font-size: 1.8em;
+    }
+}
 /* Hover de iconos */
 footer a:hover {
     color: #B57EDC;
