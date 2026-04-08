@@ -115,40 +115,29 @@ footer a {
 }
 /* --- AJUSTES PARA MÓVIL --- */
 @media (max-width: 600px) {
-    header {
-        height: 70vh; /* La foto ocupará el 70% de la pantalla del móvil */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-        /* Ponemos la foto de fondo solo para el móvil */
-        background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url('mar.jpg');
-        background-size: cover;
-        background-position: center center;
-        
-        margin: 0;
-        border-radius: 0 0 30px 30px;
-        color: white;
-        text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    /* Mantenemos el círculo pero lo hacemos ENORME */
+    .foto-perfil {
+        display: block !important; /* Por si la habíamos ocultado */
+        width: 280px !important;   /* Casi todo el ancho del móvil */
+        height: 280px !important;
+        margin: 0 auto 20px auto;  /* Centrada y con espacio abajo */
+        border: 4px solid #B57EDC; /* Que se vea bien el borde morado */
     }
 
-    /* Escondemos el circulito en el móvil porque ya se ve de fondo */
-    .foto-perfil {
-        display: none;
+    header {
+        height: auto;        /* Que no ocupe toda la pantalla */
+        background: none;    /* Quitamos la foto de fondo rara */
+        padding-top: 40px;
     }
 
     h1 {
-        font-size: 2.2em; /* Nombre grande sobre la foto */
-        color: white !important;
+        font-size: 1.8em !important;
+        color: #4A148C !important; /* Volvemos a tu morado oscuro original */
+        text-shadow: none;         /* Quitamos la sombra de antes */
     }
 
     h2 {
         font-size: 1.1em;
-        color: #f0f0f0 !important;
-    }
-
-    section {
-        margin: 15px; /* Un poco de margen para que no pegue al borde del móvil */
+        color: #6A1B9A !important;
     }
 }
