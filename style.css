@@ -1,0 +1,122 @@
+/* Paleta de colores Pastel Refinada: Lavanda/Púrpura Medio (#B57EDC) y Verde Bosque Oscuro Legible (#1A531A) */
+
+/* Esto cambia el tipo de letra, color y AÑADE EL FONDO */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    
+    /* FONDO DE NEURONAS CON CAPA DE TRANSPARENCIA */
+    background-color: transparent; /* Permite ver la capa de color debajo */
+    background-image: 
+        linear-gradient(rgba(253, 253, 253, 0.80), rgba(253, 253, 253, 0.70)), /* Capa de color casi blanco, muy transparente */
+        url('fondo-neuronas.png'); /* TU IMAGEN DE FONDO */
+    background-size: cover; /* Cubre toda la página */
+    background-attachment: fixed; /* Imagen fija al hacer scroll */
+    background-position: center; /* Centrada */
+    
+    color: #4a4a4a; /* Gris oscuro suave para texto general */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para la cabecera */
+header {
+    text-align: center;
+    background-color: transparent;
+    padding: 40px;
+}
+
+/* Foto circular fina */
+.foto-perfil {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #B57EDC;
+}
+
+/* Nombre principal H1 - PÚRPURA MEDIO */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: #B57EDC; /* Púrpura medio visible */
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+/* H2 (Cargo) - VERDE OSCURO LEGIBLE (Actualizado para visibilidad) */
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #1A531A; /* Un verde bosque más oscuro y legible */
+    font-size: 1em;
+    margin-top: 0;
+}
+
+/* Estilos para las secciones */
+section {
+    background-color: rgba(255, 255, 255, 0.9); /* Ligeramente transparente para ver el fondo sutil */
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    border: 1px solid #B57EDC;
+}
+
+/* Subtítulos H3 - PÚRPURA MEDIO (Actualizado para visibilidad) */
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: #9370DB; /* Un lavanda más visible pero suave (Medium Purple) */
+    border-bottom: 2px solid #9370DB;
+    padding-bottom: 10px;
+    margin-top: 0;
+    font-size: 1.3em;
+}
+
+/* Lista de publicaciones fina */
+ul {
+    line-height: 1.7;
+    padding-left: 20px;
+}
+
+/* Estilos para el pie de página (footer) */
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px;
+    background-color: transparent; /* Sin fondo para ligereza */
+    color: #666666;
+    border-top: 1px solid #B57EDC;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Los enlaces */
+a {
+    color: #B57EDC; /* Púrpura medio para los enlaces generales */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Los iconos en el footer finos */
+footer a {
+    color: #666666; /* Gris medio por defecto */
+    font-size: 2em;
+    margin: 0 15px;
+    transition: transform 0.2s;
+    display: inline-block;
+}
+
+/* Hover de iconos */
+footer a:hover {
+    color: #B57EDC;
+    text-decoration: none;
+    transform: scale(1.1);
+}
