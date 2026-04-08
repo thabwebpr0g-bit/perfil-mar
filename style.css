@@ -115,34 +115,40 @@ footer a {
 }
 /* --- AJUSTES PARA MÓVIL --- */
 @media (max-width: 600px) {
-    body {
-        /* Hacemos que el fondo se vea mejor en vertical */
-        background-size: auto 100%; 
-        padding: 10px;
+    header {
+        height: 70vh; /* La foto ocupará el 70% de la pantalla del móvil */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        /* Ponemos la foto de fondo solo para el móvil */
+        background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url('mar.jpg');
+        background-size: cover;
+        background-position: center center;
+        
+        margin: 0;
+        border-radius: 0 0 30px 30px;
+        color: white;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
     }
 
+    /* Escondemos el circulito en el móvil porque ya se ve de fondo */
     .foto-perfil {
-        width: 250px; /* ¡Más grande para el móvil! */
-        height: 250px;
+        display: none;
     }
 
     h1 {
-        font-size: 1.6em; /* Un pelín más pequeño para que no se corte el nombre */
+        font-size: 2.2em; /* Nombre grande sobre la foto */
+        color: white !important;
+    }
+
+    h2 {
+        font-size: 1.1em;
+        color: #f0f0f0 !important;
     }
 
     section {
-        padding: 15px; /* Menos margen interno para ganar espacio */
-        margin-top: 15px;
+        margin: 15px; /* Un poco de margen para que no pegue al borde del móvil */
     }
-
-    footer a {
-        margin: 0 8px; /* Iconos más juntitos para que quepan en una fila */
-        font-size: 1.8em;
-    }
-}
-/* Hover de iconos */
-footer a:hover {
-    color: #B57EDC;
-    text-decoration: none;
-    transform: scale(1.1);
 }
